@@ -98,5 +98,265 @@ img {
 }
 
 .hero::before {
-    background-color: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/*  Middle Section  */
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.middle-section .box {
+    /* text-align: center; */
+    padding: 50px 20px;
+}
+
+.middle-section .box i {
+    background: #28a745;
+    border-radius: 50%;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.middle-section .box h3 {
+    font-weight: bold;
+}
+
+/* Third Section */
+
+.info {
+    display: flex;
+    height: 600px;    
+}
+
+.info .info-img {
+    background: url("../img/home/people.jpg") no-repeat center center/cover;
+    width: 50%;
+    height: 100%;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #28a745;
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    padding: 20px;
+}
+
+.info-content h1 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.info-content p:first-child {
+    font-weight: bold;
+}
+
+
+.info-content a{
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.info-content a:hover {
+    background-color: #333;
+}
+
+/* Cases */
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.section-header .section-padding {
+    padding: 20px 20px 40px;
+}
+
+.row .column img {
+    height: 50%;
+}
+
+.row .column img:hover {
+    opacity: 0.7;
+}
+
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/* Blog */
+
+.blog {
+    display: flex;
+    height: 600px;
+    padding: 50px 0 2px;
+}
+
+.blog .blog-img {
+    background: url("../img/home/blog.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 50%;
+}
+
+.blog .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+    justify-content: center;
+    width: 50%;
+    background-color: #0284d0;
+}
+
+.blog .blog-content p:first-child {
+    font-weight: bold;
+}
+
+.blog .blog-content h1 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.blog .blog-content a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/*  Team  */
+
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.team-row .team-column {
+    padding: 40px;
+}
+
+.team-row .team-column img {
+    border-radius: 50%;
+}
+
+.team-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-column p:first-of-type {
+    font-weight: bold;
+}
+
+/*  Contact */
+
+
+#contact .contact-img {
+    background: url("../img/home/contact.jpg") no-repeat center center/cover;
+    width: 50%;
+}
+
+#contact .contact-content {
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+}
+
+#contact .contact-content h1 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#contact .contact-content input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact .contact-content a {
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #28a745;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#contact .contact-content input:focus {
+    outline-color: #28a745;
+}
+
+/* Footer */
+
+.footer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.footer .social {
+    display: flex;
+}
+
+.footer .social p {
+    margin: 0;
+    font-size: 36px;
+}
+
+.footer .social i{
+    color: #fff;
+    padding: 10px 20px 30px;
 }
