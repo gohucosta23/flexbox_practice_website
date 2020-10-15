@@ -49,3 +49,8 @@
     background: #333;
     color: #fff;
 }
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
